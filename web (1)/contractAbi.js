@@ -1,14 +1,4 @@
-// you can paste your own ABI in here if necessary (shouldn't be if the contract is the same)
 var abi = [
-    {
-      "constant": false,
-      "inputs": [],
-      "name": "approve",
-      "outputs": [],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
     {
       "constant": true,
       "inputs": [],
@@ -40,7 +30,7 @@ var abi = [
     {
       "constant": true,
       "inputs": [],
-      "name": "viewApprover",
+      "name": "receiver",
       "outputs": [
         {
           "name": "",
@@ -48,7 +38,16 @@ var abi = [
         }
       ],
       "payable": false,
-      "stateMutability": "pure",
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "constructor",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
       "type": "function"
     },
     {
@@ -68,7 +67,7 @@ var abi = [
     {
       "constant": true,
       "inputs": [],
-      "name": "receiver",
+      "name": "viewApprover",
       "outputs": [
         {
           "name": "",
@@ -76,13 +75,16 @@ var abi = [
         }
       ],
       "payable": false,
-      "stateMutability": "view",
+      "stateMutability": "pure",
       "type": "function"
     },
     {
+      "constant": false,
       "inputs": [],
+      "name": "approve",
+      "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
-      "type": "constructor"
+      "type": "function"
     }
   ];
